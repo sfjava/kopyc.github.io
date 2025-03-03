@@ -4,8 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>All Flowers Are My Favorite Color || kopyc.net </title>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/github-light.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <!-- some custom CSS to avoid "squished" text when flowing around floating image -->
+    <style>
+    	img {
+    		max-width:50%;
+    	}
+		@media screen and (max-width:900px) {
+			img {
+				float:none;
+				margin:0px;
+				max-width:100%;
+			}
+		}
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
@@ -22,11 +35,11 @@
 
         <h1>All Flowers Are My Favorite Color</h1>
 
-		<div style="float: right; margin:10px">
-	      <img src="/images/grammyJaneK-wateringFlowers-IMG_7092.jpg" width="350">
-		</div>
+		<!-- ><div style="float:right; margin:10px"> -->
+	      <img src="../images/grammyJaneK-wateringFlowers-IMG_7092.jpg" style="float:right; margin:10px; width:350px;">
+		<!-- ></div> -->
 		
-		<div style="min-width:200px">
+		<!-- <div style="min-width:200px"> -->
 		<p>
 So, we all know the country is divided.<br /><br />
 Unfortunately, far too many believe they’re right and the other side is wrong, dead wrong...
@@ -154,7 +167,7 @@ Mark reminded me of how Gram and Grampy had a very special gift of making each o
 Sending my love,<br />
 Kim
 		</p>
-	</div>
+	<!-- </div> -->
 
     </div>
     
